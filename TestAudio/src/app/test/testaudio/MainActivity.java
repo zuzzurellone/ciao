@@ -45,12 +45,7 @@ public class MainActivity extends ActionBarActivity implements SensorEventListen
 	//udibili da 20 a 20K, riproducibili tramite cassa stimiamo un 20 - 1000 
 	private byte generatedSnd[] = new byte[2 * numSamples]; 
 	Handler handler = new Handler(); 
-	
-//	aggiorna textview
-//	
-//			public TextView prima= (TextView) findViewById(R.id.printx);
-//			public TextView seconda= (TextView) findViewById(R.id.printy);
-//			public TextView terza = (TextView) findViewById(R.id.printz);
+
 				
 	
 	@Override
@@ -233,6 +228,18 @@ public void ferma(View view){
 
 
 //probabilmente devo anche azzerare le variabili in alto perchè mi fa crashare tutto quando lo premo 
+
+
+public void genimm(View view){
+	Intent pepperoni = new Intent (getApplicationContext(), Immagine.class);
+	startActivity(pepperoni);
+	
+	
+}
+
+
+
+
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
